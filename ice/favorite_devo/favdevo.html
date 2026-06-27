@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+        <table class="center">
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Elder Mark A. Bragg</td>
+            <td>Christlike Resiliency</td>
+            <td>Taylor Building</td>
+            <td>2026</td>
+          </tr>
+          <tr>
+            <td>Brother Ben Yates</td>
+            <td>Navigating Life with an
+              Eternal Perspective</td>
+            </td>
+            <td>Taylor Building</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>Elder Geralde Causse</td>
+            <td>I Saw Your Potential</td>
+            <td>Taylor Building</td>
+            <td>2023</td>
+          </tr>
+        </table>
+        <div class="container">
+          <form action="action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="speaker">Speaker Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="speaker" name="speaker" placeholder="Speaker name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="devotitle">Devotional Title</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="devotitle" name="devotitle" placeholder="Devotional title..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="year">Year</label>
+              </div>
+              <div class="col-75">
+                <select id="year" name="year">
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Location">Location</label>
+              </div>
+              <div class="col-75">
+                <textarea id="location" name="Location" placeholder="Location here"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
