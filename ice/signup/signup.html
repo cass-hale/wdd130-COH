@@ -13,7 +13,40 @@
 
         body {
             background: rgb(120, 96, 64);
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr ;
         }
+        #formContainer {
+            background: rgb(255, 255, 255);
+            width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            border: 5px solid rgb(64, 64, 120);
+        }
+        #headerFeeding {
+            width: 440px;
+            height: auto;   
+            margin: -20px -20px 10px -20px;
+            border-radius: 10px 10px 0 0;
+            justify-self: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #male, #female {
+            margin-right: 5px;
+            justify-content: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+        
+
     </style>
 
 
@@ -23,40 +56,43 @@
 
 <body>
     <div id="formContainer">
-        <h3>Sign Up for Daily Scripture Feed</h3>
-        <form id="myForm">
-            <button type="button" id="closeBtn">X</button>
-            <label for="username">User Name:</label>
-            <input type="text" id="username" name="username" required>
+        <img id="headerFeeding" src="images/jesus_feeds_5000.jpeg" alt="Jesus feeding the 5000">
+        <h1>Daily Feed</h1>
+        <h2>Scripture a Day</h2>
+            <h3>Sign Up for Daily Scripture Feed</h3>
+                <form id="myForm">
+                    <button type="button" id="closeBtn">X</button>
+                    <label for="username">User Name:</label>
+                    <input type="text" id="username" name="username" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-            <label>Gender:</label>
-            <div>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female" required>
-                <label for="female">Female</label>
-            </div>
+                    <label>Gender:</label>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
 
-            <section>
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Subscribe to newsletter</label>
-            </section>
+                    <section>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to newsletter</label>
+                    </section>
 
-            <section>
-                <input type="checkbox" id="conditions" name="conditions" required>
-                <label for="conditions">I acknowledge the terms and conditions</label>
-            </section>
+                    <section>
+                     <input type="checkbox" id="conditions" name="conditions" required>
+                        <label for="conditions">I acknowledge the terms and conditions</label>
+                    </section>
 
-            <section>
+                    <section>
                 <button type="submit">Submit</button>
-            </section>
-        </form>
+                    </section>
+                </form>
     </div>
 
     <div id="output"></div>
